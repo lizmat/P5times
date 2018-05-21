@@ -1,5 +1,6 @@
 use v6.c;
-unit module P5times:ver<0.0.2>;
+
+unit module P5times:ver<0.0.3>:auth<cpan:ELIZABETH>;
 
 sub times() is export {
     use nqp;
@@ -28,8 +29,21 @@ P5times - Implement Perl 5's times() built-in
 
 =head1 DESCRIPTION
 
-This module tries to mimic the behaviour of the C<times> of Perl 5 as closely as
-possible.
+This module tries to mimic the behaviour of the C<times> function of Perl 5
+as closely as possible.
+
+=head1 ORIGINAL PERL 5 DOCUMENTATION
+
+    times   Returns a four-element list giving the user and system times in
+            seconds for this process and any exited children of this process.
+
+                ($user,$system,$cuser,$csystem) = times;
+
+            In scalar context, "times" returns $user.
+
+            Children's times are only included for terminated children.
+
+            Portability issues: "times" in perlport.
 
 =head1 PORTING CAVEATS
 

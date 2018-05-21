@@ -2,6 +2,10 @@ Revision history for P5chop
 
 {{$NEXT}}
 
+0.0.3  2018-05-21T22:02:53+02:00
+    - Added original Perl 5 documentation
+    - Added authority information
+
 0.0.2  2018-04-11T16:40:00+02:00
     - Follow App:Mi6's default Changes format
     - Fix for new API of nqp::getrusage, Zoffix++
