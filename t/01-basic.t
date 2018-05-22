@@ -13,7 +13,8 @@ ok $system1 > 0, 'did we get some system CPU';
 is $cuser1,   0, 'did we get no child user CPU';
 is $csystem1, 0, 'did we get no child system CPU';
 
-Nil for ^100000; # make sure we burn some CPU
+Nil for ^100000;     # make sure we burn some user CPU
+open($?FILE).close;  # make sure we burn some system CPU
 
 my ($user2,$system2,$cuser2,$csystem2) = times;
 ok $user2   > $user1,   "second user CPU $user2 > first user CPU $user1";
