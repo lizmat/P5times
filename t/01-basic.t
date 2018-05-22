@@ -13,9 +13,11 @@ ok $system1 > 0, 'did we get some system CPU';
 is $cuser1,   0, 'did we get no child user CPU';
 is $csystem1, 0, 'did we get no child system CPU';
 
+sleep .1; # sorta make sure we slice it out
+
 my ($user2,$system2,$cuser2,$csystem2) = times;
 ok $user2   > $user1,   "second user CPU $user2 > first user CPU $user1";
-ok $system2 > $system1, "second system CPU $user2 > first system CPU $user1";
+ok $system2 > $system1, "second system CPU $system2 > first system CPU $system1";
 is $cuser2,   0,        'did we get no child user CPU';
 is $csystem2, 0,        'did we get no child system CPU';
 
