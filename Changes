@@ -2,6 +2,9 @@ Revision history for P5chop
 
 {{$NEXT}}
 
+0.0.5  2018-05-22T20:03:08+02:00
+    - Made sure we burn even more system CPU (to mitigate fails on Travis)
+
 0.0.4  2018-05-22T18:44:01+02:00
     - Made sure we burn CPU for test (this failed on Travis)
 
