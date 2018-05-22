@@ -14,8 +14,8 @@ is $cuser1,   0, 'did we get no child user CPU';
 is $csystem1, 0, 'did we get no child system CPU';
 
 my ($user2,$system2,$cuser2,$csystem2) = times;
-ok $user2   > $user1,   'did we get more user CPU';
-ok $system2 > $system1, 'did we get more system CPU';
+ok $user2   > $user1,   "second user CPU $user2 > first user CPU $user1";
+ok $system2 > $system1, "second system CPU $user2 > first system CPU $user1";
 is $cuser2,   0,        'did we get no child user CPU';
 is $csystem2, 0,        'did we get no child system CPU';
 
