@@ -13,7 +13,7 @@ ok $system1 > 0, 'did we get some system CPU';
 is $cuser1,   0, 'did we get no child user CPU';
 is $csystem1, 0, 'did we get no child system CPU';
 
-sleep .1; # sorta make sure we slice it out
+Nil for ^100000; # make sure we burn some CPU
 
 my ($user2,$system2,$cuser2,$csystem2) = times;
 ok $user2   > $user1,   "second user CPU $user2 > first user CPU $user1";
