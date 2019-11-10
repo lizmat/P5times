@@ -1,6 +1,6 @@
 use v6.c;
 
-unit module P5times:ver<0.0.6>:auth<cpan:ELIZABETH>;
+unit module P5times:ver<0.0.7>:auth<cpan:ELIZABETH>;
 
 my proto sub times(|) is export {*}
 multi sub times(Scalar:U) {
@@ -26,7 +26,7 @@ multi sub times() {
 
 =head1 NAME
 
-P5times - Implement Perl 5's times() built-in
+P5times - Implement Perl's times() built-in
 
 =head1 SYNOPSIS
 
@@ -38,10 +38,10 @@ P5times - Implement Perl 5's times() built-in
 
 =head1 DESCRIPTION
 
-This module tries to mimic the behaviour of the C<times> function of Perl 5
+This module tries to mimic the behaviour of the C<times> function of Perl
 as closely as possible.
 
-=head1 ORIGINAL PERL 5 DOCUMENTATION
+=head1 ORIGINAL PERL DOCUMENTATION
 
     times   Returns a four-element list giving the user and system times in
             seconds for this process and any exited children of this process.
@@ -71,7 +71,7 @@ Pull Requests are welcome.
 
 Copyright 2018-2019 Elizabeth Mattijsen
 
-Re-imagined from Perl 5 as part of the CPAN Butterfly Plan.
+Re-imagined from Perl as part of the CPAN Butterfly Plan.
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 

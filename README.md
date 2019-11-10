@@ -1,9 +1,7 @@
-[![Build Status](https://travis-ci.org/lizmat/P5times.svg?branch=master)](https://travis-ci.org/lizmat/P5times)
-
 NAME
 ====
 
-P5times - Implement Perl 5's times() built-in
+P5times - Implement Perl's times() built-in
 
 SYNOPSIS
 ========
@@ -17,10 +15,10 @@ SYNOPSIS
 DESCRIPTION
 ===========
 
-This module tries to mimic the behaviour of the `times` function of Perl 5 as closely as possible.
+This module tries to mimic the behaviour of the `times` function of Perl as closely as possible.
 
-ORIGINAL PERL 5 DOCUMENTATION
-=============================
+ORIGINAL PERL DOCUMENTATION
+===========================
 
     times   Returns a four-element list giving the user and system times in
             seconds for this process and any exited children of this process.
@@ -53,7 +51,7 @@ COPYRIGHT AND LICENSE
 
 Copyright 2018-2019 Elizabeth Mattijsen
 
-Re-imagined from Perl 5 as part of the CPAN Butterfly Plan.
+Re-imagined from Perl as part of the CPAN Butterfly Plan.
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 
