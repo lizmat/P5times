@@ -1,4 +1,4 @@
-use v6.c;
+use v6.*;
 use Test;
 use P5times;
 %*ENV<RAKUDO_NO_DEPRECATIONS> = True;
@@ -26,4 +26,4 @@ ok $system2 > $system1, "second system CPU $system2 > first system CPU $system1"
 is $cuser2,   0,        'did we get no child user CPU';
 is $csystem2, 0,        'did we get no child system CPU';
 
-# vim: ft=perl6 expandtab sw=4
+# vim: expandtab shiftwidth=4
