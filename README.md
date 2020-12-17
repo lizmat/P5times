@@ -34,6 +34,13 @@ ORIGINAL PERL DOCUMENTATION
 PORTING CAVEATS
 ===============
 
+Microseconds vs Seconds
+-----------------------
+
+Due to a misunderstanding, it was found that the the `times` function returns **microseconds** versus seconds (as the original Perl version does). This was only found after two years of this module's existence, and deemed much more useful in the Raku context.
+
+Therefore it was decided to keep this behaviour in December 2020.
+
 Child process information
 -------------------------
 

@@ -1,6 +1,6 @@
 use v6.*;
 
-unit module P5times:ver<0.0.8>:auth<cpan:ELIZABETH>;
+unit module P5times:ver<0.0.9>:auth<cpan:ELIZABETH>;
 
 my proto sub times(|) is export {*}
 multi sub times(Scalar:U) {
@@ -55,6 +55,15 @@ closely as possible in the Raku Programming Language.
             Portability issues: "times" in perlport.
 
 =head1 PORTING CAVEATS
+
+=head2 Microseconds vs Seconds
+
+Due to a misunderstanding, it was found that the the C<times> function returns
+B<microseconds> versus seconds (as the original Perl version does).  This was
+only found after two years of this module's existence, and deemed much more
+useful in the Raku context.
+
+Therefore it was decided to keep this behaviour in December 2020.
 
 =head2 Child process information
 
