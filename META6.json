@@ -1,5 +1,5 @@
 {
-  "auth": "cpan:ELIZABETH",
+  "auth": "zef:lizmat",
   "authors": [
     "Elizabeth Mattijsen"
   ],
@@ -12,7 +12,7 @@
   "name": "P5times",
   "perl": "6.c",
   "provides": {
-    "P5times": "lib/P5times.pm6"
+    "P5times": "lib/P5times.rakumod"
   },
   "resources": [
   ],
@@ -23,5 +23,5 @@
   ],
   "test-depends": [
   ],
-  "version": "0.0.9"
+  "version": "0.0.10"
 }

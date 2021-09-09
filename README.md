@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/lizmat/P5times/workflows/test/badge.svg)](https://github.com/lizmat/P5times/actions)
+
 NAME
 ====
 
@@ -49,14 +51,14 @@ There is currently no way to obtain the usage information of child processes.
 AUTHOR
 ======
 
-Elizabeth Mattijsen <liz@wenzperl.nl>
+Elizabeth Mattijsen <liz@raku.rocks>
 
 Source can be located at: https://github.com/lizmat/P5times . Comments and Pull Requests are welcome.
 
 COPYRIGHT AND LICENSE
 =====================
 
-Copyright 2018-2020 Elizabeth Mattijsen
+Copyright 2018, 2019, 2020, 2021 Elizabeth Mattijsen
 
 Re-imagined from Perl as part of the CPAN Butterfly Plan.
 
